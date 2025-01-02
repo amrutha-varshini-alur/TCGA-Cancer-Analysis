@@ -6,7 +6,7 @@ This project implements a Random Forest Classifier to distinguish between two ty
 The goal of this project is to classify cancer types using mutation data from two datasets: PRAD and BRCA. A Random Forest Classifier is trained and evaluated to determine its performance in classifying these cancer types. The classifier is further optimized using feature selection and hyperparameter tuning.
 
 
-**Dataset Description**
+<ins>**Dataset Description**</ins>
 
 **Datasets:**
 PRAD Mutation Data: Contains mutation information for Prostate Adenocarcinoma.
@@ -21,7 +21,7 @@ Tumor_Sample_Barcode: Identifies the sample.
 Hugo_Symbol: Represents the mutated gene name.
 
 
-<ins>**Dependencies**</ins>
+**Dependencies**
 This project is implemented in Python. Below are the primary libraries required:
 
 pandas: Data manipulation and analysis.
@@ -76,7 +76,7 @@ python cancer_classification.py
 
 
 **Expected Output:**
-Cross-validation accuracy scores.
-Best parameters from GridSearchCV.
-Feature importance ranking.
+Cross-validation accuracy scores.\n
+Best parameters from GridSearchCV.\n
+Feature importance ranking.\n
 Final model accuracy with the top 50 features.
