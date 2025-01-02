@@ -21,7 +21,7 @@ Tumor_Sample_Barcode: Identifies the sample.
 Hugo_Symbol: Represents the mutated gene name.
 
 
-**Dependencies**
+<ins>**Dependencies**</ins>
 This project is implemented in Python. Below are the primary libraries required:
 
 pandas: Data manipulation and analysis.
