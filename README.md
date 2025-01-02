@@ -1,2 +1,77 @@
-# TCGA-Cancer-Analysis
-This is the code that I have developed as a part of an independent project to familiarize myself with data from a different source.
+# TCGA - Cancer Type Classification Using Mutation Data
+This project implements a Random Forest Classifier to distinguish between two types of cancer — Prostate Adenocarcinoma (PRAD) and Breast Invasive Carcinoma (BRCA) — based on gene mutation data. The workflow includes data preprocessing, feature selection, model training, hyperparameter tuning, and evaluation.
+
+**Project Overview**
+The goal of this project is to classify cancer types using mutation data from two datasets: PRAD and BRCA. A Random Forest Classifier is trained and evaluated to determine its performance in classifying these cancer types. The classifier is further optimized using feature selection and hyperparameter tuning.
+
+**Dataset Description**
+**Datasets:**
+PRAD Mutation Data: Contains mutation information for Prostate Adenocarcinoma.
+BRCA Mutation Data: Contains mutation information for Breast Invasive Carcinoma.
+
+**File Format:** Tab-separated values (.txt).
+
+**Columns Used:**
+Tumor_Sample_Barcode: Identifies the sample.
+Hugo_Symbol: Represents the mutated gene name.
+
+
+**Dependencies**
+This project is implemented in Python. Below are the primary libraries required:
+pandas: Data manipulation and analysis.
+numpy: Numerical computations.
+scikit-learn: Machine learning algorithms.
+GridSearchCV: Hyperparameter optimization.
+
+**Install dependencies using:**
+bash
+Copy code
+pip install pandas numpy scikit-learn
+
+**Code Workflow**
+1. Data Preprocessing
+Mutation data is processed into a binary matrix where:
+Rows represent samples.
+Columns represent mutated genes (presence = 1, absence = 0).
+Only genes shared between PRAD and BRCA datasets are retained.
+2. Combining Data
+PRAD and BRCA data are combined into a single dataset with a cancer_type column as the target variable.
+3. Model Training and Evaluation
+A Random Forest Classifier is trained using the combined dataset.
+Cross-validation is performed to evaluate model stability.
+4. Feature Selection
+Top 50 important features (genes) are selected based on feature importance scores from the Random Forest model.
+5. Hyperparameter Tuning
+GridSearchCV is used to optimize the Random Forest hyperparameters:
+n_estimators: Number of trees.
+max_features: Number of features to consider for splits.
+6. Performance Metrics
+Accuracy is calculated for the full feature set and the top 50 features.
+
+**Usage**
+**Clone the repository:**
+bash
+Copy code
+git clone https://github.com/your-username/cancer-classification.git
+cd cancer-classification
+
+**Run the script:**
+Ensure your dataset files are in the correct path (replace the paths in the script if necessary). Execute the Python script:
+bash
+Copy code
+python cancer_classification.py
+
+**Expected Output:**
+Cross-validation accuracy scores.
+Best parameters from GridSearchCV.
+Feature importance ranking.
+Final model accuracy with the top 50 features.
+
+**Project Structure**
+Cancer-Type-Classification/
+│
+├── classify_cancer.py         # Main script for classification
+├── requirements.txt           # List of required packages
+├── prad_data_mutations.txt    # PRAD mutation data
+├── brca_data_mutations.txt    # BRCA mutation data
+└── README.md                  # Project documentation
