@@ -22,14 +22,10 @@ Hugo_Symbol: Represents the mutated gene name.
 
 
 **Dependencies**
-This project is implemented in Python. Below are the primary libraries required:
-
-pandas: Data manipulation and analysis.
-
-numpy: Numerical computations.
-
-scikit-learn: Machine learning algorithms.
-
+This project is implemented in Python. Below are the primary libraries required:<br>
+pandas: Data manipulation and analysis.<br>
+numpy: Numerical computations.<br>
+scikit-learn: Machine learning algorithms.<br>
 GridSearchCV: Hyperparameter optimization.
 
 
@@ -61,21 +57,21 @@ Accuracy is calculated for the full feature set and the top 50 features.
 
 
 **Usage**
-**Clone the repository:**
-bash
-Copy code
-git clone https://github.com/your-username/cancer-classification.git
+**Clone the repository:**<br>
+bash<br>
+Copy code<br>
+git clone https://github.com/your-username/cancer-classification.git<br>
 cd cancer-classification
 
 
-**Run the script:**
-Ensure your dataset files are in the correct path (replace the paths in the script if necessary). Execute the Python script:
-bash
-Copy code
+**Run the script:**<br>
+Ensure your dataset files are in the correct path (replace the paths in the script if necessary). Execute the Python script:<br>
+bash<br>
+Copy code<br>
 python cancer_classification.py
 
 
-**Expected Output:**
+**Expected Output:**<br>
 Cross-validation accuracy scores.<br>
 Best parameters from GridSearchCV.<br>
 Feature importance ranking.<br>
