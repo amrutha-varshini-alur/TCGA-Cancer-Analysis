@@ -76,7 +76,7 @@ python cancer_classification.py
 
 
 **Expected Output:**
-Cross-validation accuracy scores.\n
-Best parameters from GridSearchCV.\n
-Feature importance ranking.\n
+Cross-validation accuracy scores.<br>
+Best parameters from GridSearchCV.<br>
+Feature importance ranking.<br>
 Final model accuracy with the top 50 features.
