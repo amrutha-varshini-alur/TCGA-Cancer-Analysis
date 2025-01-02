@@ -23,9 +23,13 @@ Hugo_Symbol: Represents the mutated gene name.
 
 **Dependencies**
 This project is implemented in Python. Below are the primary libraries required:
+
 pandas: Data manipulation and analysis.
+
 numpy: Numerical computations.
+
 scikit-learn: Machine learning algorithms.
+
 GridSearchCV: Hyperparameter optimization.
 
 
