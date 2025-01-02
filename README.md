@@ -56,8 +56,8 @@ max_features: Number of features to consider for splits.
 Accuracy is calculated for the full feature set and the top 50 features.
 
 
-**Usage**
-**Clone the repository:**<br>
+**Usage**<br>
+Clone the repository:<br>
 bash<br>
 Copy code<br>
 git clone https://github.com/your-username/cancer-classification.git<br>
